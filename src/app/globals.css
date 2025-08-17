@@ -1,0 +1,110 @@
+/* Tailwind custom color variables for theme support */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 35 83% 96%;
+    --foreground: 24 9.8% 10%;
+    --card: 35 100% 98%;
+    --card-foreground: 24 9.8% 10%;
+    --popover: 35 100% 98%;
+    --popover-foreground: 24 9.8% 10%;
+    --primary: 35 100% 58%;
+    --primary-foreground: 24 9.8% 10%;
+    --secondary: 40 100% 90%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 40 100% 90%;
+    --muted-foreground: 24 5.4% 35%;
+    --accent: 35 90% 65%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 35 20% 80%;
+    --input: 35 20% 85%;
+    --ring: 35 100% 58%;
+    --chart-1: 35 100% 58%;
+    --chart-2: 25 100% 65%;
+    --chart-3: 15 95% 60%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.8rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 24 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 24 10% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 24 10% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 35 100% 58%;
+    --primary-foreground: 24 9.8% 10%;
+    --secondary: 24 5% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 24 5% 12%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 35 90% 65%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 5% 16%;
+    --input: 24 5% 16%;
+    --ring: 35 100% 58%;
+    --chart-1: 35 100% 58%;
+    --chart-2: 25 100% 65%;
+    --chart-3: 15 95% 60%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+  @apply border-gray-200;
+  }
+  body {
+  /* Removed invalid @apply for Tailwind utility classes. Use these in className in JSX, not in CSS. */
+  }
+}
